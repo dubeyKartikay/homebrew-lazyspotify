@@ -2,7 +2,7 @@ class Lazyspotify < Formula
   desc "Terminal Spotify client bundled with a patched go-librespot daemon"
   homepage "https://github.com/dubeyKartikay/lazyspotify"
   url "https://github.com/dubeyKartikay/lazyspotify/releases/download/v0.1.0/lazyspotify-v0.1.0-src.tar.gz"
-  sha256 "207f5fb4725ef1483a73363fe4d7f030f238776db7bc06a8ba8f4ed2ca421020"
+  sha256 "16bc4ad4f223d07c0752265bb2465ee95d6dc8ec81a6bfa235d292f8db2fdf52"
   license all_of: ["MIT", "GPL-3.0-only"]
 
   depends_on "flac" => :build
@@ -15,8 +15,8 @@ class Lazyspotify < Formula
     daemon_path = opt_libexec/"lazyspotify-librespot"
     main_ldflags = [
       "-X", "github.com/dubeyKartikay/lazyspotify/buildinfo.Version=0.1.0",
-      "-X", "github.com/dubeyKartikay/lazyspotify/buildinfo.Commit=8f7ba68950aaf758a16aa543ece62a234632e0cc",
-      "-X", "github.com/dubeyKartikay/lazyspotify/buildinfo.BuildDate=2026-04-13T11:55:07Z",
+      "-X", "github.com/dubeyKartikay/lazyspotify/buildinfo.Commit=17704034369ec69af8fd8c1fc2a68c36ccce401f",
+      "-X", "github.com/dubeyKartikay/lazyspotify/buildinfo.BuildDate=2026-04-13T12:04:47Z",
       "-X", "github.com/dubeyKartikay/lazyspotify/buildinfo.PackagedDaemonPath=#{daemon_path}",
     ]
 
